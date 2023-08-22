@@ -13,5 +13,48 @@ MonoBehaviour:
   m_Name: vHierarchy Data
   m_EditorClassIdentifier: 
   sceneDatasByGuid:
-    keys: []
-    values: []
+    keys:
+    - 0b8183ca9ed07db47a2159ae34c30a00
+    - 16f723d6241cba34eafa97dc98625732
+    - 8c9cfa26abfee488c85f1582747f6a02
+    - 25c87e55024d58c40adff412925c0673
+    values:
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+    - goDatasByGlobalId:
+        keys: []
+        values: []
+    - goDatasByGlobalId:
+        keys:
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1552567085-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-170615007-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1175233405-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1896977536-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-2087369024-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-619394800-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-519420028-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1594226656-0
+        - GlobalObjectId_V1-2-8c9cfa26abfee488c85f1582747f6a02-1210490327-0
+        values:
+        - iColor: 5
+          icon: AudioReverbZone Icon
+        - iColor: 0
+          icon: AvatarMask On Icon
+        - iColor: 0
+          icon: Terrain Icon
+        - iColor: 0
+          icon: Favorite
+        - iColor: 1
+          icon: PreMatCube
+        - iColor: 9
+          icon: Light Icon
+        - iColor: 4
+          icon: Camera Icon
+        - iColor: 8
+          icon: Canvas Icon
+        - iColor: 0
+          icon: Canvas Icon
+    - goDatasByGlobalId:
+        keys: []
+        values: []

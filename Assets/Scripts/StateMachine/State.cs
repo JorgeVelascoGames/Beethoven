@@ -6,18 +6,18 @@ namespace VelascoGames.StateMachine
 {
 	public abstract class State
 	{
-		public State(StateMachine machine, State previousState = null)
+		public State(FiniteStateMachine machine, State previousState = null)
 		{
 			stateMachine = machine;
 
 			this.previousState = previousState;
 		}
 
-		protected StateMachine stateMachine;
+		protected FiniteStateMachine stateMachine;
 		protected State previousState;
 
 		#region Public properties
-		public StateMachine Machine => stateMachine;
+		public FiniteStateMachine Machine => stateMachine;
 		public State PreviousState => previousState;
 		#endregion
 

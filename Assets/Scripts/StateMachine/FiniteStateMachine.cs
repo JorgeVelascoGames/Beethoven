@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace VelascoGames.StateMachine
 {
-	public class StateMachine
+	public class FiniteStateMachine
 	{
 		private State currentState;
 		
-		public StateMachine(State initState)
+		public FiniteStateMachine(State initState)
 		{
 			currentState = initState;
 		}

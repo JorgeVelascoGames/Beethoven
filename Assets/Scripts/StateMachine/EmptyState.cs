@@ -5,7 +5,7 @@ using VelascoGames.StateMachine;
 
 public class EmptyState : State
 {
-	public EmptyState(StateMachine machine, State previousState = null) : base(machine, previousState)
+	public EmptyState(FiniteStateMachine machine, State previousState = null) : base(machine, previousState)
 	{
 		stateMachine = machine;
 
