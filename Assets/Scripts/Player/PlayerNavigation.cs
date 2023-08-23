@@ -8,11 +8,11 @@ namespace VelascoGames.Beethoven.Player
 {
 	public class PlayerNavigation : PlayerSubManager
 	{
-		private Location currentLocation;
+		private Room currentLocation;
 		[SerializeField] private Location startingArea;
 
 		#region Public properties
-		[ShowInInspector] public Location CurrentRoom => currentLocation;
+		[ShowInInspector] public Room CurrentRoom => currentLocation;
 		 public Location StartingArea => startingArea;
 		#endregion
 
@@ -58,16 +58,19 @@ namespace VelascoGames.Beethoven.Player
 				return;
 
 			//Hacemos el cambio de estancia...
-
-
 			currentLocation.PlayerLeaves();
-
-			//....
 
 			newRoom.PlayerArrives();
 
 		    currentLocation = newRoom;
 
+			//Cargamos la nueva estancia en pantalla
+			GameManager.Instance.UIManager.SetUpRoom(GameManager.Instance.PlayerManager.Navigation.CurrentRoom);
+
+			//Habilitamos el nuevo estado
+			GameManager.Instance.GeneralStateMachine.StartNewState(new EnterRoomState(GameManager.Instance.GeneralStateMachine));
+
+			//Guardamos
 			ES3.Save("currentLocation", currentLocation, SaveAndLoadManager.SAVE_BASIC_NAME);
 		}
 	}

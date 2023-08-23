@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace VelascoGames.StateMachine
+namespace VelascoGames.Beethoven
 {
 	public class FiniteStateMachine
 	{

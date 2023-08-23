@@ -13,10 +13,15 @@ namespace VelascoGames.Beethoven.World
 		//Tesoro
 		//Npc
 
+		[SerializeField] private Sprite roomBrackground;
+
 		#region Public properties
 		public Area AreaBelong => areaBelong;
+		public Sprite RoomBackground => roomBrackground;
 		#endregion
 
+
+		#region Room object methods
 		[Button]
 		public void DelteRoom()
 		{
@@ -27,6 +32,7 @@ namespace VelascoGames.Beethoven.World
 		{
 			areaBelong = area;
 		}
+		#endregion
 	}
 }
 

@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace VelascoGames.Beethoven
 {
-	public class EmptyState : State
+	public class EnterRoomState : State
 	{
-		public EmptyState(FiniteStateMachine machine, State previousState = null) : base(machine, previousState)
+		public EnterRoomState(FiniteStateMachine machine, State previousState = null) : base(machine, previousState)
 		{
 			stateMachine = machine;
 
@@ -15,9 +15,12 @@ namespace VelascoGames.Beethoven
 
 		public override string GetStateName()
 		{
-			return "Empty";
+			return "Room state";
+		}
+
+		public override void StartState()
+		{
 		}
 	}
 }
-
 
