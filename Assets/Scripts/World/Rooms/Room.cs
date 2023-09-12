@@ -11,17 +11,24 @@ namespace VelascoGames.Beethoven.World
 		//Location string
 		//Enemigo/Jefe
 		//Tesoro
-		//Npc
-
-		[SerializeField] private Sprite roomBrackground;
+		[TitleGroup("Room elements", "All the elements that can be found in the room")]
+		[SerializeField] private GameObject roomBrackground;
+		[SerializeField] private GameObject enemie;
+		[SerializeField] private GameObject npc;
+		[SerializeField] [TextArea] private string roomDescription;
 
 		#region Public properties
 		public Area AreaBelong => areaBelong;
-		public Sprite RoomBackground => roomBrackground;
+		public GameObject RoomBackground => roomBrackground;
+		public string RoomDescription => roomDescription;
+
+		public GameObject Enemie => enemie;
+		public GameObject NPC => npc;
 		#endregion
 
 
 		#region Room object methods
+		[PropertySpace]
 		[Button]
 		public void DelteRoom()
 		{

@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8708652b26de1f4193f6897f5d8fd01, type: 3}
   m_Name: Coridor
   m_EditorClassIdentifier: 
-  zoneName: Coridor
+  zoneName:
+    "espa\xF1ol": Corredor
+    english: Coridor
   conections:
   - {fileID: 11400000, guid: 5c4dbd36ae736f74fbbd40f7ee77fafe, type: 2}
+  - {fileID: 11400000, guid: 9b841b06c4f7e12489b67219f3e63202, type: 2}
+  roomBrackground: {fileID: 57820413306497481, guid: 6b2dc13371bdf984eb472d0112b3c502, type: 3}

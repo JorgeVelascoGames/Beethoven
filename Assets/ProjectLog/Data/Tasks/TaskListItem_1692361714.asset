@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: TaskListItem_1692361714
   m_EditorClassIdentifier: 
   m_CreationDate: 18/08/2023 14:28:34
-  m_ModifiedDate: 22/08/2023 21:11:06
+  m_ModifiedDate: 04/09/2023 19:38:28
   m_Author: Default 0
   m_TaskDescription: "El sistema de guardado y cargado ya est\xE1 implementado y
     funcionando. Ya puedo crear la primera sala del juego, al final de la cual guardamos
     el bool del save manager como true para saber que ya est\xE1 empezada la partida
-    y hacer que se carguen los datos debidamente. Me voy por el script \"EnterRoomState\" "
+    y hacer que se carguen los datos debidamente. Me voy por el script \"ComatState
+    \""
   m_IsDone: 0
   m_Priority: 1

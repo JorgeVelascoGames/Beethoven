@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8708652b26de1f4193f6897f5d8fd01, type: 3}
+  m_Name: OutsideOfTheCastle
+  m_EditorClassIdentifier: 
+  zoneName:
+    "espa\xF1ol": Exteriord el castillo
+    english: Outside of the castle
+  conections:
+  - {fileID: 11400000, guid: 9b841b06c4f7e12489b67219f3e63202, type: 2}
+  roomBrackground: {fileID: 5347638716773501494, guid: 800c94e2e4c4a694da99cee0d3b86e3e, type: 3}

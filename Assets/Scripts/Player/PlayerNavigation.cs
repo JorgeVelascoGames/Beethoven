@@ -1,4 +1,5 @@
 using Sirenix.OdinInspector;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,11 @@ namespace VelascoGames.Beethoven.Player
 {
 	public class PlayerNavigation : PlayerSubManager
 	{
-		private Room currentLocation;
+		private Room currentRoom;
 		[SerializeField] private Location startingArea;
 
 		#region Public properties
-		[ShowInInspector] public Room CurrentRoom => currentLocation;
+		[ShowInInspector] public Room CurrentRoom => currentRoom;
 		 public Location StartingArea => startingArea;
 		#endregion
 
@@ -58,20 +59,21 @@ namespace VelascoGames.Beethoven.Player
 				return;
 
 			//Hacemos el cambio de estancia...
-			currentLocation.PlayerLeaves();
+			currentRoom.PlayerLeaves();
 
 			newRoom.PlayerArrives();
 
-		    currentLocation = newRoom;
+		    currentRoom = newRoom;
 
 			//Cargamos la nueva estancia en pantalla
-			GameManager.Instance.UIManager.SetUpRoom(GameManager.Instance.PlayerManager.Navigation.CurrentRoom);
+			GameManager.Instance.GraphicManager.SetUpGraphics(currentRoom.RoomBackground);
+			GameManager.Instance.UIManager.SetUpRoomText(currentRoom);
 
 			//Habilitamos el nuevo estado
 			GameManager.Instance.GeneralStateMachine.StartNewState(new EnterRoomState(GameManager.Instance.GeneralStateMachine));
 
 			//Guardamos
-			ES3.Save("currentLocation", currentLocation, SaveAndLoadManager.SAVE_BASIC_NAME);
+			ES3.Save("currentLocation", currentRoom, SaveAndLoadManager.SAVE_BASIC_NAME);
 		}
 	}
 }

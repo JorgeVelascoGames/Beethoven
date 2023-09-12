@@ -21,8 +21,15 @@ namespace VelascoGames.Beethoven
 		public State PreviousState => previousState;
 		#endregion
 
-
 		public abstract string GetStateName();
+		
+		/// <summary>
+		/// Get the text for the help window, explaining what this state does
+		/// </summary>
+		public virtual string GetHelpText()
+		{
+			return "";
+		}
 
 		#region Unity methods
 		public virtual void StartState()

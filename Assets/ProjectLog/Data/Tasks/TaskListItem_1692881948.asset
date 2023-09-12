@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8708652b26de1f4193f6897f5d8fd01, type: 3}
-  m_Name: Cave
+  m_Script: {fileID: 11500000, guid: fc9870c9c712ca141824e0e99a714d6e, type: 3}
+  m_Name: TaskListItem_1692881948
   m_EditorClassIdentifier: 
-  zoneName: Cave
-  conections:
-  - {fileID: 11400000, guid: 6e6941ad5b73e3e4da46feda273405b2, type: 2}
+  m_CreationDate: 24/08/2023 14:59:08
+  m_ModifiedDate: 25/08/2023 12:50:21
+  m_Author: Default 0
+  m_TaskDescription: "Investigar iluminaci\xF3n 2D "
+  m_IsDone: 1
+  m_Priority: 1

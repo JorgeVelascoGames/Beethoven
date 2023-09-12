@@ -24,6 +24,7 @@ namespace VelascoGames.Beethoven.World
 		public Room Entrance => entrance;
 		#endregion
 
+#if(UNITY_EDITOR)
 		[Button]
 		public void GenerateNewRoom(string name, bool isEntrance)
 		{
@@ -51,7 +52,7 @@ namespace VelascoGames.Beethoven.World
 			// Refresca la base de datos de activos para que aparezca en el proyecto
 			AssetDatabase.Refresh();
 		}
-
+#endif
 	}
 }
 

@@ -28,6 +28,7 @@ namespace VelascoGames.Beethoven
 		private PlayerManager playerManager;
 		private RunManager runManager;
 		private UIManager uiManager;
+		private GraphicManager graphicManager;
 		#endregion
 
 		#region Public properties
@@ -40,6 +41,7 @@ namespace VelascoGames.Beethoven
 		public RunManager RunManager => runManager;
 		public SaveAndLoadManager SaveAndLoadManager => saveManager;
 		public UIManager UIManager => uiManager;
+		public GraphicManager GraphicManager => graphicManager;
 		public Lenguages CurrentLenguage => currentLenguage;
 		#endregion
 
@@ -101,14 +103,19 @@ namespace VelascoGames.Beethoven
 			{
 				runManager = (RunManager)newManager;
 			}
+			else if(newManager is GraphicManager)
+			{
+				graphicManager = (GraphicManager)newManager;
+			}
 
 			//Para prevenir problemas de referencias al cargar el juego, se asegura de que todos los managers estén configurados
 			if(uiManager != null &&
 				playerManager != null &&
-				runManager != null)
+				runManager != null &&
+				graphicManager != null)
 			{
 				if (GameSetUp != null)
-					GameSetUp();
+					GameSetUp(); //Aquí avisamos de que el Game Manager ya está cargado debidamente
 			}
 		}
 		#endregion
